@@ -3,15 +3,12 @@
 # Game User Interface - C++
 
 ## Installation:
-Clone and run with Visual Studio. The source code is not currently on GitHub - I am removing all unnecessary classes and functions that do not specifically
-relate to the GUI, but it will be up shortly. I am trying to skim down the code from about 15,000 lines to about 2000 and perferably less as much of the code currently has other
-functions and classes for features that are not specifically related to the UI. I will probably post those specififc parts later in digestible chunks that may help people working on specific elements. But regardless, this should all be up shortly.
+Source code will be up shortly - I am removing all unnecessary classes and functions that do not specifically
+relate to the GUI, there are some ghost classes / functions that need to be cleaned up and there are functions and classes for features I have made that are not specifically related to the UI. I will probably post those specififc parts later in digestible chunks so people can see the individual elements and so the huge folder size can be broken up across different repos.
 
 ## Overview: 
 Solo project built initially as a console application. The graphics/sprites/ and layout were created by myself in Blender/Gimp/Photoshop using 
 3d models which were flattened into 2d sprites and then coded into the program using a hardware abstraction layer, specifically SDL (Simple Direct Media Layer).
-
-
 
 <p align="center"> <https://www.libsdl.org/download-2.0.php"> <img width = "300px" src="https://upload.wikimedia.org/wikipedia/ru/2/26/SDL_logo.png" /> </a> </p>
 
