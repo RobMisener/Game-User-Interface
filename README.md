@@ -5,11 +5,16 @@
 ## Installation:
 Clone and run with Visual Studio. The source code is not currently on GitHub - I am removing all unnecessary classes and functions that do not specifically
 relate to the GUI, but it will be up shortly. I am trying to skim down the code from about 15,000 lines to about 2000 and perferably less as much of the code currently has other
-functions and classes for features that are not specifically related to the UI. I will probably post those specififc parts later in digestible chunks that may help people working on specific elements. 
+functions and classes for features that are not specifically related to the UI. I will probably post those specififc parts later in digestible chunks that may help people working on specific elements. But regardless, this should all be up shortly.
 
 ## Overview: 
 Solo project built initially as a console application. The graphics/sprites/ and layout were created by myself in Blender/Gimp/Photoshop using 
 3d models which were flattened into 2d sprites and then coded into the program using a hardware abstraction layer, specifically SDL (Simple Direct Media Layer).
+
+
+
+<p align="center"> <https://www.libsdl.org/download-2.0.php"> <img width = "300px" src="https://upload.wikimedia.org/wikipedia/ru/2/26/SDL_logo.png" /> </a> </p>
+
 This was built over many months, and I have learned much better programming practices since starting it, but I am proud of the overall result. Also, the project as it currently is is well over the gigabyte limit GitHub places on projects, so I have to pick and choose what to transfer first.
 
 ## Title Screen:
@@ -17,7 +22,7 @@ This was built over many months, and I have learned much better programming prac
 of the image plane into pieces and inserted animation key-frames containing their final connected positions on the last frame of the animation playback. I then separated the subdivisions of the mesh
 plane and spread them apart, recording animation key-frames of the subdivided and now separated pieces at earlier frames of the animation. </p>
 
-<p align="center"> <a href="https://download.blender.org"> <img width = "400px" src="https://download.blender.org/institute/logos/blender-socket.png" /> </a> </p>
+<p align="center"> <a href="https://www.blender.org"> <img width = "400px" src="https://download.blender.org/institute/logos/blender-socket.png" /> </a> </p>
 
 <p> The result was that the subdivisions of the image plane/mesh are initially
 separated and then come together. I then rendered the animation and took the individual PNG frames and placed them in one GIMP image. Using a sprite creator plugin, the pictures were arranged into
@@ -58,7 +63,7 @@ Similar to the process in the title screen I rendered the animaiton in Blender a
 that I used for the title screen, assigning each portion of the spritesheet to rectangle clips and storing them in arrays to pass them through as animations that loop in reverse and back to create a more lifelike and non-distracting effect. 
 
 ## Turn order 
-At end of the transaction, user change is returned in coins. The console machine returns coins like a real vending machine, starting with quarters, then dimes and nickels.
+The turn order is decided based on stats and the characters smaller portraits (top upper-middle of screen) are ordered by which characters performed best in the function to determine turn order. Would this be an RPG, a visual representation of turn order may be useful to the player when making strategic decisons.
 
 ## Final Thoughts
 Designing the title screen and learning how C++ and SDL worked was one of the more difficult programming challenges I have encountered. Useful, up-to-date, and helpful documentation regarding SDL is hard to come by, I could really only find one good tutorial and reference site that I kept coming back to while teaching myself it. These days, many people create games using third party systems like Unity, which offer a visual and user friendly approach. C++ and SDL on the other hand is almost entirely code based, its like working in a mechanics shop with a match, you always feel a bit left in the dark as to what you are exactly creating and the learning curve is very high. I do, however, think it can result in more unique and creative results as the creation of your game is left in your hands - however unsteady they may be- and not created through graphical package designed to make a graphical package like Unity - which to be fair I have not personally tried myself albeit to me - and it may just be me - there seems to be a certain artistic staleness in both gameplay and design in some unity games, some seem to share  a similar graphical /stylistic aura to them. But despite the difficulties, I learned a lot and had a lot of fun - and frustration - putting this together.
