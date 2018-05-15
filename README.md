@@ -3,8 +3,7 @@
 # Game User Interface - C++
 
 ## Installation:
-Source code will be up shortly - I am removing all unnecessary classes and functions that do not specifically
-relate to the GUI, there are also some ghost classes / functions that need to be cleaned up. I will probably post those specififc parts later in digestible chunks so people can see the individual elements and so the huge folder size can be broken up across different repos.
+Source code will be up shortly.
 
 ## Overview: 
 Solo project built initially as a console application. The graphics, sprites, and layout were created by myself in Blender/Gimp/Photoshop using 
