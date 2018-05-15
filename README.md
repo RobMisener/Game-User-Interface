@@ -15,8 +15,8 @@ Solo project built initially as a console application. The graphics/sprites/ and
 This was built over many months, and I have learned much better programming practices since starting it, but I am proud of the overall result. Also, the project as it currently is is well over the gigabyte limit GitHub places on projects, so I have to pick and choose what to transfer first.
 
 ## Title Screen:
-<p>  To create the title animation, I created the 2D image of the title screen in Photoshop and then imported the image as an image plane to Blender, a 3D modeling program. I subdivided the mesh
-of the image plane into pieces and inserted animation key-frames containing their final connected positions on the last frame of the animation playback. I then separated the subdivisions of the mesh
+<p>  To create the title animation, I created the 2D image of the title screen in Photoshop, the water background was created using white spraypaint textures over some previous textures I had designed prior. I then imported the title image as an image plane to Blender, a 3D modeling program. I subdivided the mesh
+of the image plane into pieces and inserted animation key-frames containing their final connected positions on the last frame of the animation in Blender. I then separated the subdivisions of the mesh
 plane and spread them apart, recording animation key-frames of the subdivided and now separated pieces at earlier frames of the animation. </p>
 
 <p align="center"> <a href="https://www.blender.org"> <img width = "400px" src="https://download.blender.org/institute/logos/blender-socket.png" /> </a> </p>
