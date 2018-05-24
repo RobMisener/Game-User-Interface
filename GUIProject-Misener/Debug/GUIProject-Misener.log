@@ -1,0 +1,21 @@
+﻿  CSprite.cpp
+c:\users\misen\source\repos\guiproject-misener\guiproject-misener\csprite.cpp(115): warning C4101: 'printQuadStats': unreferenced local variable
+c:\users\misen\source\repos\guiproject-misener\guiproject-misener\csprite.cpp(1023): warning C4101: 'printQuadStats': unreferenced local variable
+  Character.cpp
+  DisplayEStatBar.cpp
+c:\users\misen\source\repos\guiproject-misener\guiproject-misener\displayestatbar.cpp(312): warning C4101: 'fillRectSubtract': unreferenced local variable
+  GUIProject-Misener.cpp
+c:\users\misen\source\repos\guiproject-misener\guiproject-misener\guiproject-misener.cpp(547): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  LButton.cpp
+  LTexture.cpp
+  TTimer.cpp
+c:\users\misen\source\repos\guiproject-misener\guiproject-misener\ttimer.cpp(195): warning C4244: 'return': conversion from 'float' to 'Uint32', possible loss of data
+  Thermometers.cpp
+  attack.cpp
+c:\users\misen\source\repos\guiproject-misener\guiproject-misener\attack.cpp(227): warning C4101: 'incentive_target_socialWeakness': unreferenced local variable
+c:\users\misen\source\repos\guiproject-misener\guiproject-misener\attack.cpp(534): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Generating Code...
+c:\users\misen\source\repos\guiproject-misener\guiproject-misener\character.cpp(445): warning C4715: 'Character::love_rel': not all control paths return a value
+c:\users\misen\source\repos\guiproject-misener\guiproject-misener\character.cpp(523): warning C4715: 'Character::birthOrder': not all control paths return a value
+c:\users\misen\source\repos\guiproject-misener\guiproject-misener\character.cpp(480): warning C4715: 'Character::hate_rel': not all control paths return a value
+  GUIProject-Misener.vcxproj -> C:\Users\misen\source\repos\GUIProject-Misener\Debug\GUIProject-Misener.exe
