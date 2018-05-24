@@ -1,64 +1,64 @@
 <a href="http://www.robertmisener.com"> My Portfolio Website </a>
 
-# Game User Interface - C++
+# Game User Interface, Title Screen, Turn Order : C++ and SDL
+#### By: Robert Misener
+
 
 ## Installation:
-Source code will be up shortly.
+Download and run in visual studio. Visit the <a href="http://lazyfoo.net/tutorials/SDL/01_hello_SDL/windows/msvsnet2010u/index.php"> SDL setup tutorial </a> if you have problems or errors running it in Visual Studio
 
 ## Overview: 
-Solo project built initially as a console application. The graphics, sprites, and layout were created by myself in Blender/Gimp/Photoshop using 
-3d models which were flattened into 2d sprites and then coded into the program using a hardware abstraction layer, specifically SDL (Simple Direct Media Layer).
+Solo project built initially as a console application. The graphics, sprites, and layout were created by myself in Blender/Gimp/ and Photoshop using 3D models which were flattened into 2D sprites and then coded into the program using a hardware abstraction layer, specifically SDL (Simple Direct Media Layer)
 
 <p align="center"> <https://www.libsdl.org/download-2.0.php"> <img width = "300px" src="https://upload.wikimedia.org/wikipedia/ru/2/26/SDL_logo.png" /> </a> </p>
 
-This was built over many months, and I have learned much better programming practices since starting it, but I am proud of the overall result. 
+This was built over many months, and I have learned much better programming practices since starting it, but I am proud of the overall result. Many of the variable names were not named with group work in mind, so they may be difficult for others to understand. They are not variable names I would use in a group or work project.
 
 ## Title Screen:
-<p>  To create the title animation, I created the 2D image of the title screen in Photoshop, the water background was created using white spraypaint textures over some previous textures I had designed prior. I then imported the title image as an image plane to Blender, a 3D modeling program. I subdivided the mesh
-of the image plane into pieces and inserted animation key-frames containing their final connected positions on the last frame of the animation in Blender. I then separated the subdivisions of the mesh
-plane and spread them apart, recording animation key-frames of the subdivided -and now separated- pieces at earlier frames of the animation timeline. </p>
+*  To create the title animation, I created a 2D image of the final title screen image in Photoshop, the water background was created using white spraypaint textures over some previous textures images I created for prior projects. 
+* I then imported the title image as an image plane to Blender, a 3D modeling program. I subdivided the mesh
+of the image plane into pieces and inserted animation key-frames containing their final connected positions. 
+* I then separated the subdivisions of the mesh and recorded the key-frames at the start of the timeline. I then rendered the result, which was of pieces of the title coming together as a whole.
 
 <p align="center"> <a href="https://www.blender.org"> <img width = "400px" src="https://download.blender.org/institute/logos/blender-socket.png" /> </a> </p>
 
-<p> The result was that the subdivisions of the image plane/mesh are initially
-separated and then come together. I then rendered the animation and took the individual PNG frames and placed them in one GIMP image. Using a sprite creator plugin, the pictures were arranged into
-a spritesheet which I then used as the final PNG file on which the final in-game rendered animation would be based on. </p>
+<p> I then placed the rendered PNG images in a spritesheet using GIMP 2.0. </p>
 
 <p align="center"> <a href="https://gimp.org"> <img width = "400px" src="https://charitycatalogue.com/wp-content/uploads/2017/04/gimp-logo-1-1024x482.png" /> </a> </p>
 
-
-<p> 
-I then coded the reference to the image as a texture object in SDL, and created a rectangle outline (called a clip in SDL) which represented the size of
-one individual image in the sprite-sheet.  This representation of the rectangle was then multiplied by the number of frames in the image and put into an array, where through some 'for' loops, each frame
-of the animation sprite was recorded as a seperate image relative to where the x and y location of each rectangle (clip) was assigned to. 
-</p>
+* After, I coded a reference to the image as a texture object in SDL, and created a rectangle outline which represented the size of
+one individual image in the sprite-sheet.  
+* This representation of the rectangle was then multiplied by the number of frames in the image and put into an array, where through some 'for' loops, each frame
+of the animation sprite was recorded as a seperate image relative to where the x and y location of each rectangle (clip) was assigned to.
 
 <p align="center"> <img src="https://github.com/RobMisener/Game-User-Interface/raw/master/ReadMeImages/torRAM4.gif" /> </p>
-
-<p>
-The rectangle clip itself is only a reference to the location - it is a window into which portion of the sprite sheet you wish to project into the array.
-By using SDL's built in functions you can assign pieces or frames of the image to individual indexes in an array, so that when you want to loop through the frames to create an animation, you can render using the index number of the frame you want rendered to the screen.
-</p>
-
 ## Stat Bars:
-Stats are randomly generated from characters and are visually represented in the stat bars. As you scroll over each character, the stats stored for each
-are projected onto the right of the screen. This was done by modifying the integer values of the geometric shapes generated from SDL. The stats held by objects from the character class
-affect and update each bar to represent the character that the mouse was hovering over.
+* Stats are randomly generated from characters and are visually represented in the stat bars. 
+* As you scroll over each character, the stats stored for each
+are projected onto the right of the screen in the form of graph bars for each respective stat. 
+* This was done by entering the various stat properties for each character into a method that passed the integer values of each stat as the x-axis for SDL geometrical rectangles. The rectangles were then drawn to the screen whenever the mouse hovered over the character.
 
 ## Character Sprites:
-The character sprites were taken from 3d meshes I made in Blender. 
+* The character sprites were taken from 3d meshes I made in Blender. The skins for the characters were created in Gimp 2.0.
 
 <p align="center"> <img src="https://github.com/RobMisener/Game-User-Interface/raw/master/ReadMeImages/torRAM3.gif" /> </p>
 
-<p>Similar to the process in the title screen I rendered the animation in Blender and put the frames together into a sprite sheet using Gimp.</p> 
+* Like the title screen animation, the animation was rendered in Blender using keyframes. 
+* Bones for each person had to be created and assigned in Blender. 
+* The bones were moved and the keyframes of their position were recorded to make the human mesh move.   
 
 <p align="center"> <img src="https://github.com/RobMisener/Game-User-Interface/raw/master/ReadMeImages/torRAM2.gif" /> </p>
 
-<p> I then used the same process that I used for the title screen, assigning each portion of the spritesheet to rectangle clips and storing them in arrays to pass them through as animations that loop in reverse and then back to create a more lifelike and continuous image.
-</p>
+* The animation was rendered in Blender, creating PNG images for each frame of the animation. The PNG frames were then arranged into a spreadsheet using Gimp, merging them into one image file. 
+* Using the colorize function in Gimp, multiple copies of the image were created, with each copy containing a character in a now different colored shirt. 
+* These five spritesheets were then used to render each of the five character sprites rendered on the screen,
 
 ## Turn order 
-The turn order is decided based on individual character stats and the character's smaller portraits (top upper-middle of screen) are ordered by which characters performed best in the function I designed to determine turn order. Would this be an RPG, a visual representation of turn order may be useful to the player when making strategic decisons.
+* The initial turn order for each character is decided via a function that measures various character stats. The number is modified based on the stats of the other characters at the time of program compilation, so it is dynamically generated each time. 
+* The rough turn order numbers of each character are sorted in an array. The values are sorted by turn order number and an array is returned that points to the reference of each character in order of their turn.
+* Using the new pointer array as an argument, an icon of each individual character are rendered to the screen in order of their turn.
 
 ## Final Thoughts
-Designing the title screen and learning how C++ and SDL worked was one of the more difficult programming challenges I have encountered. Useful, up-to-date, and helpful documentation regarding SDL is hard to come by. I could really only find one good tutorial and reference site that I kept coming back to while teaching myself it. These days, many people create games using third party systems like Unity, which offer a visual and user friendly approach. C++ and SDL, on the other hand, is almost entirely code based, which felt a bit like working on an assemply align with only a match to light my work. I would construct things in my mind, but when the program compiled, the graphical representation looked completely different on screen. I do, however, think using an exclusively code based method to create the game resulted in a more organic result then would have if I had relied on a third party game-engine.
+* Useful, up-to-date, and helpful documentation regarding SDL is hard to come by
+* Using SDL and C++ was challenging commpared to using a third party engine like Unity, but seemed to result in more organic choices
+* Writing a good object oriented foundation from beginning is important, as design choices you make later will increasingly become afected by choices you made before
