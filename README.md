@@ -12,13 +12,13 @@ Solo project built initially as a console application. The graphics, sprites, an
 
 <p align="center"> <https://www.libsdl.org/download-2.0.php"> <img width = "300px" src="https://upload.wikimedia.org/wikipedia/ru/2/26/SDL_logo.png" /> </a> </p>
 
-This was built over many months, and I have learned much better programming practices since starting it, but I am proud of the overall result. Many of the variable names were not named with group work in mind, so they may be difficult for others to understand. They are not variable names I would use in a group or work project.
+This was built over many months, and I have learned much better programming practices since starting it, but I am proud of the overall result. Many of the variable names were not named with group work in mind, so they may be difficult for others to understand. They are not variable names I would use in a group or work project but they are understandable to myself.
 
 ## Title Screen:
-*  To create the title animation, I created a 2D image of the final title screen image in Photoshop, the water background was created using white spraypaint textures over some previous textures images I created for prior projects. 
-* I then imported the title image as an image plane to Blender, a 3D modeling program. I subdivided the mesh
+*  To create the title animation, I created a 2D image of the final title screen image in Photoshop, the water background was created using white spraypaint textures over some previous textures I had created for prior projects. 
+* I then imported the title image as an image-plane into Blender, a 3D modeling program. I subdivided the mesh
 of the image plane into pieces and inserted animation key-frames containing their final connected positions. 
-* I then separated the subdivisions of the mesh and recorded the key-frames at the start of the timeline. I then rendered the result, which was of pieces of the title coming together as a whole.
+* I then separated the subdivisions of the mesh and recorded the now parted pieces as seperate key-frames at the start of the timeline. I then rendered the result, which resulted in the appearance of the pieces of the title coming together as a whole.
 
 <p align="center"> <a href="https://www.blender.org"> <img width = "400px" src="https://download.blender.org/institute/logos/blender-socket.png" /> </a> </p>
 
