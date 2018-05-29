@@ -8,7 +8,7 @@
 * Download and run in visual studio. Visit the <a href="http://lazyfoo.net/tutorials/SDL/01_hello_SDL/windows/msvsnet2010u/index.php"> SDL setup tutorial </a> if you have problems or errors running it in Visual Studio. If there is any difficulty you can always contact myself as well.
 
 ## Overview: 
-* This is a small part of a solo project I have worked on- on and off - for about 2 years. It was built from the ground up, starting as an empty console program. The graphics, sprites, and layout were created by myself in Blender, Gimp, and Photoshop using 3D models which were flattened into 2D sprites and then coded into the program using a hardware abstraction layer, specifically SDL (Simple Direct Media Layer).
+* This is a small part of a solo project I have been building, on and off, for about 2 years. It was built from the ground up, starting as an empty console program. The graphics, sprites, and layout were created by myself in Blender, Gimp, and Photoshop using 3D models which were flattened into 2D sprites and then coded into the program using a hardware abstraction layer, specifically SDL (Simple Direct Media Layer).
 
 <p align="center"> <https://www.libsdl.org/download-2.0.php"> <img width = "300px" src="https://upload.wikimedia.org/wikipedia/ru/2/26/SDL_logo.png" /> </a> </p>
 
