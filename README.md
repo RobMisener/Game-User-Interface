@@ -5,17 +5,17 @@
 
 
 ## Installation:
-Download and run in visual studio. Visit the <a href="http://lazyfoo.net/tutorials/SDL/01_hello_SDL/windows/msvsnet2010u/index.php"> SDL setup tutorial </a> if you have problems or errors running it in Visual Studio
+* Download and run in visual studio. Visit the <a href="http://lazyfoo.net/tutorials/SDL/01_hello_SDL/windows/msvsnet2010u/index.php"> SDL setup tutorial </a> if you have problems or errors running it in Visual Studio.You can always contact me as well if there is any difficulty.
 
 ## Overview: 
-Solo project built initially as a console application. The graphics, sprites, and layout were created by myself in Blender/Gimp/ and Photoshop using 3D models which were flattened into 2D sprites and then coded into the program using a hardware abstraction layer, specifically SDL (Simple Direct Media Layer)
+* This is a small part of a solo project I have worked on and off on for about 2 years. It was built from the ground up, starting as an empty console program. The graphics, sprites, and layout were created by myself in Blender, Gimp, and Photoshop using 3D models which were flattened into 2D sprites and then coded into the program using a hardware abstraction layer, specifically SDL (Simple Direct Media Layer).
 
 <p align="center"> <https://www.libsdl.org/download-2.0.php"> <img width = "300px" src="https://upload.wikimedia.org/wikipedia/ru/2/26/SDL_logo.png" /> </a> </p>
 
-This was built over many months, and I have learned much better programming practices since starting it, but I am proud of the overall result. Many of the variable names were not named with group work in mind, so they may be difficult for others to understand. They are not variable names I would use in a group or work project but they are understandable to myself.
+* As mentioned, this is part of a project that was made over a long period of time and I have learned much better programming practices since starting it - or at least that's what I tell myself to sleep at night. But despite my long journey into the heart of darkness, this project, like any creature that evolves, must stand on the shoulders of its previous iterations and, like the panda, it is sometimes still forced to grasp for bamboo-sticks with thumbs originally designed for some silly outdated reason.Yeah, way to go pandas! Your reckless infatuation for arboreal locomotion totally paid off in the long run! I hope those enlarged wrist bones are worth it. Where was I? Yes. The code is not perfect, but I am proud of the overall result.  Many of the variable names were not named with group work in mind and would not be variable names I would use in a group or work project, but were understandable to myself while developing. I will likely rename them later for better clarity.
 
 ## Title Screen:
-*  To create the title animation, I created a 2D image of the final title screen image in Photoshop, the water background was created using white spraypaint textures over some previous textures I had created for prior projects. 
+* To create the title animation, I created a 2D image of the final title screen image in Photoshop, the water background was created using white spraypaint textures over some previous textures I had created for prior projects. 
 * I then imported the title image as an image-plane into Blender, a 3D modeling program. I subdivided the mesh
 of the image plane into pieces and inserted animation key-frames containing their final connected positions. 
 * I then separated the subdivisions of the mesh and recorded the now parted pieces as seperate key-frames at the start of the timeline. I then rendered the result, which resulted in the appearance of the pieces of the title coming together as a whole.
@@ -62,3 +62,6 @@ are projected onto the right of the screen in the form of graph bars for each re
 * Useful, up-to-date, and helpful documentation regarding SDL is hard to come by
 * Using SDL and C++ was challenging commpared to using a third party engine like Unity, but seemed to result in more organic choices
 * Writing a good object oriented foundation from beginning is important, as design choices you make later will increasingly become afected by choices you made before
+
+<a href="http://www.robertmisener.com"> See More Projects on My Portfolio Website</a>
+
