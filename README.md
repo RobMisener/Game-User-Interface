@@ -18,11 +18,11 @@
 * To create the title animation, I created a 2D image of the final title screen image in Photoshop, the water background was created using white spraypaint textures over some previous textures I had created for prior projects. 
 * I then imported the title image as an image-plane into Blender, a 3D modeling program. I subdivided the mesh
 of the image plane into pieces and inserted animation key-frames containing their final connected positions. 
-* I then separated the subdivisions of the mesh and recorded the now parted pieces as seperate key-frames at the start of the timeline. I then rendered the result, which resulted in the appearance of the pieces of the title coming together as a whole.
+* I then separated the subdivisions of the mesh and recorded the now parted pieces as separate  key-frames at the start of the timeline. I then rendered the result, which resulted in the appearance of the pieces of the title coming together as a whole.
 
 <p align="center"> <a href="https://www.blender.org"> <img width = "400px" src="https://download.blender.org/institute/logos/blender-socket.png" /> </a> </p>
 
-<p> I then placed the rendered PNG images in a spritesheet using GIMP 2.0. </p>
+* I then placed the rendered PNG images in a spritesheet using GIMP 2.0.
 
 <p align="center"> <a href="https://gimp.org"> <img width = "400px" src="https://charitycatalogue.com/wp-content/uploads/2017/04/gimp-logo-1-1024x482.png" /> </a> </p>
 
@@ -32,6 +32,7 @@ one individual image in the sprite-sheet.
 of the animation sprite was recorded as a seperate image relative to where the x and y location of each rectangle (clip) was assigned to.
 
 <p align="center"> <img src="https://github.com/RobMisener/Game-User-Interface/raw/master/ReadMeImages/torRAM4.gif" /> </p>
+
 ## Stat Bars:
 * Stats are randomly generated from characters and are visually represented in the stat bars. 
 * As you scroll over each character, the stats stored for each
@@ -55,13 +56,13 @@ are projected onto the right of the screen in the form of graph bars for each re
 
 ## Turn order 
 * The initial turn order for each character is decided via a function that measures various character stats. The number is modified based on the stats of the other characters at the time of program compilation, so it is dynamically generated each time. 
-* The rough turn order numbers of each character are sorted in an array. The values are sorted by turn order number and an array is returned that points to the reference of each character in order of their turn.
-* Using the new pointer array as an argument, an icon of each individual character are rendered to the screen in order of their turn.
+* The rough turn order numbers of each character is sorted into an array. The values are sorted by turn order number and an array is returned that points to the reference of each character in order of their turn.
+* Using the new pointer array as an argument, an icon of each individual character is rendered to the screen in order of their turn.
 
 ## Final Thoughts
-* Useful, up-to-date, and helpful documentation regarding SDL is hard to come by
-* Using SDL and C++ was challenging commpared to using a third party engine like Unity, but seemed to result in more organic choices
-* Writing a good object oriented foundation from beginning is important, as design choices you make later will increasingly become afected by choices you made before
+* Useful, up-to-date, and helpful documentation regarding SDL is hard to find, but available.
+* Using SDL and C++ was challenging compared to using a third party engine like Unity, but it seemed to result in more organic game design decisions and a more unique implementation of graphics.
+* Writing a good object oriented foundation from the beginning of a project is important, as design choices you make later will increasingly become affected by choices you made before.
 
 <a href="http://www.robertmisener.com"> See More Projects on My Portfolio Website</a>
 
