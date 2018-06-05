@@ -7,6 +7,13 @@
 ## Installation:
 * Download and run in visual studio. Visit the <a href="http://lazyfoo.net/tutorials/SDL/01_hello_SDL/windows/msvsnet2010u/index.php"> SDL setup tutorial </a> if you have problems or errors running it in Visual Studio. If there is any difficulty you can always contact myself as well.
 
+## Features
+* Title screen and animation
+* HUD displaying animated game characters and stats
+* Character stat bar graphs which render while hovering over a character
+* Turn order calculation and graphical display of turn order
+* Randomly generated stats for characters
+
 ## Overview: 
 * This is a small part of a solo project I have been building, on and off, for about 2 years. It was built from the ground up, starting as an empty console program. The graphics, sprites, and layout were created by myself in Blender, Gimp, and Photoshop using 3D models which were flattened into 2D sprites and then coded into the program using a hardware abstraction layer, specifically SDL (Simple Direct Media Layer).
 
